@@ -3,12 +3,11 @@
 /// Action.h
 
 class Action {
-    private:
+private:
 
-    public:
-        Action();
-        virtual ~Action();
+public:
+    Action();
+    virtual ~Action();
+    virtual int8_t run(int32_t speed) = 0;
 
-        virtual int8_t run(int32_t speed) = 0;
-
-}
+};
