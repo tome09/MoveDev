@@ -49,8 +49,6 @@ int8_t LineTrace::run(int32_t speed)
 	deviation		= target_val - hsv_data.v;
 	pid_revision 	= pid_control.run(deviation);
 
-	if ( pid_revision )
-
 	// 目標座標までの距離を算出し台形制御に現在速度を取得する
 	trapezoid.setVelocity(speed);
 	current_coordinate = car_data.getPos();
