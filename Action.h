@@ -1,3 +1,6 @@
+#pragma once
+#include "./system.h"
+
 /// 2022/07/13
 /// yoshitome
 /// Action.h
@@ -9,5 +12,7 @@ public:
     Action();
     virtual ~Action();
     virtual int8_t run(int32_t speed) = 0;
+
+        virtual int8_t run(int32_t speed) = 0;
 
 };
