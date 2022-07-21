@@ -27,12 +27,12 @@ int8_t LineTrace::run(int32_t speed)
 		std::cout << "LineTrace PARAM err  value = " << speed << std::endl;
 		return SYS_PARAM;
 	}
-	 
+	
 
 	// 変数宣言
-	ColorSpace& color_space = ColorSpace::getInstance();
-	PIDControl& pid_control = PIDControl::getInstance(gain,target_val);
-	CarData&	car_data 	= CarData::getInstance();
+	ColorSpace& color_space 	= ColorSpace::getInstance();
+	PIDControl& pid_control 	= PIDControl::getInstance(gain,target_val);
+	CarData&	car_data 		= CarData::getInstance();
 	TrapezoidControl& trapezoid = TrapezoidControl::getInstance();
 
 	HSV_DATA 	hsv_data;
